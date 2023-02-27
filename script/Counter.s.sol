@@ -13,8 +13,8 @@ import {UUPSProxy} from "../src/UUPSProxy.sol";
 import {console2} from "forge-std/console2.sol";
 
 contract DeployCounter is Script, BaseDeployer {
-    address create2addrCounter;
-    address create2addrProxy;
+    address private create2addrCounter;
+    address private create2addrProxy;
 
     Counter private wrappedProxy;
 
