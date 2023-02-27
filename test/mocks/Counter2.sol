@@ -4,9 +4,11 @@ import {UUPSUpgradeable} from "openzeppelin-upgradeable/proxy/utils/UUPSUpgradea
 
 import {Initializable} from "openzeppelin-upgradeable/proxy/utils/Initializable.sol";
 
-contract Counter is Initializable, UUPSUpgradeable {
+contract Counter2 is Initializable, UUPSUpgradeable {
     uint256 public number;
     address public owner;
+
+    uint256 public number2;
 
     /* ========== ERRORS ========== */
     error NotOwner();
@@ -18,20 +20,16 @@ contract Counter is Initializable, UUPSUpgradeable {
         _;
     }
 
-    /* ========== CONSTRUCTOR ========== */
-    /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() {
-        _disableInitializers();
-    }
-
-    /* ========== FUNCTIONS ========== */
-
     function initialize(address _owner) public initializer {
         owner = _owner;
     }
 
     function setNumber(uint256 newNumber) public {
         number = newNumber;
+    }
+
+    function setNumber2(uint256 newNumber) public {
+        number2 = newNumber;
     }
 
     /* ========== UUPS ========== */

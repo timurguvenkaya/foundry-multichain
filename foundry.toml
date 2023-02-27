@@ -1,6 +1,38 @@
-[profile.default]
-src = 'src'
-out = 'out'
-libs = ['lib']
+# Foundry Configuration File
+# Default definitions: https://github.com/gakonst/foundry/blob/b7917fa8491aedda4dd6db53fbb206ea233cd531/config/src/lib.rs#L782
+# See more config options at: https://github.com/gakonst/foundry/tree/master/config
 
-# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+[profile.default]
+solc_version = '0.8.18'
+auto_detect_solc = false
+optimizer_runs = 10_000
+gas_reports_ignore = ["Counter2"]
+
+[rpc_endpoints]
+goerli = "${GOERLI_RPC_URL}"
+mumbai = "${MUMBAI_RPC_URL}"
+bsctest = "${BSC_TESTNET_RPC_URL}"
+fuji = "${FUJI_RPC_URL}"
+arbitrumgoerli = "${ARBITRUM_GOERLI_RPC_URL}"
+optimismgoerli = "${OPTIMISM_GOERLI_RPC_URL}"
+moonriver = "${MOONRIVER_RPC_URL}"
+shiden = "${SHIDEN_RPC_URL}"
+etherum = "${ETHERUM_RPC_URL}"
+polygon = "${POLYGON_RPC_URL}"
+bsc = "${BSC_RPC_URL}"
+avalanche = "${AVALANCHE_RPC_URL}"
+arbitrum = "${ARBITRUM_RPC_URL}"
+optimism = "${OPTIMISM_RPC_URL}"
+moonbeam = "${MOONBEAM_RPC_URL}"
+astar = "${ASTAR_RPC_URL}"
+localGoerli = "${LOCAL_GOERLI_RPC_URL}"
+localFuji = "${LOCAL_FUJI_RPC_URL}"
+localBSCTest = "${LOCAL_BSCTEST_RPC_URL}"
+
+[etherscan]
+goerli = { key = "${ETHERSCAN_API_KEY}", chain = "goerli" }
+mumbai = { key = "${POLYGONSCAN_API_KEY}", chain = "mumbai" }
+bsctest = { key = "${BSCSCAN_API_KEY}", chain = "bsc-testnet" }
+fuji = { key = "${SNOWSCAN_API_KEY}", chain = "fuji" }
+arbitrumgoerli = { key = "${ARBITRUMSCAN_API_KEY}", chain = "arbitrum-goerli" }
+optimismgoerli = { key = "${OPTIMISMSCAN_API_KEY}", chain = "optimism-goerli" }

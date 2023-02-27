@@ -1,0 +1,14 @@
+{
+    "solidity.defaultCompiler": "remote",
+    "editor.formatOnSave": true,
+
+    "solidity.packageDefaultDependenciesContractsDirectory": "src",
+    "solidity.packageDefaultDependenciesDirectory": "lib",
+
+    "[solidity]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "solidity.compileUsingRemoteVersion": "v0.8.18+commit.8df45f5f",
+    "solidity.linter": "",
+    "solidity.formatter": "prettier"
+}
