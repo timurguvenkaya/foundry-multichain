@@ -1,7 +1,8 @@
 
 # Foundry Multichain 
 
-This repo provides an example of a multichain Solidity Deployment/Upgredability script pattern. It can also be applicable for non-upgradable contracts (remove UUPSProxy)
+This repo provides an example of a multichain Solidity Deployment/Upgradability script pattern. It can also be 
+applicable for non-upgradable contracts (remove UUPSProxy)
 
 - It uses CREATE2 to deploy Counter with UUPSProxy to multiple chains using a single Solidity script. 
 
