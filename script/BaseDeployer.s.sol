@@ -28,7 +28,7 @@ contract BaseDeployer is Script {
         OptimismGoerli,
         Moonriver,
         Shiden,
-        Etherum,
+        ethereum,
         Polygon,
         Bsc,
         Avalanche,
@@ -108,7 +108,7 @@ contract BaseDeployer is Script {
         forks[Chains.Shiden] = "shiden";
 
         // Mainnet
-        forks[Chains.Etherum] = "etherum";
+        forks[Chains.ethereum] = "ethereum";
         forks[Chains.Polygon] = "polygon";
         forks[Chains.Bsc] = "bsc";
         forks[Chains.Avalanche] = "avalanche";
